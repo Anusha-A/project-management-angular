@@ -1,0 +1,44 @@
+
+
+table {
+    margin-top: 5%;
+    border-collapse: collapse;
+   
+  }
+  
+  th, td {
+   
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    
+  }
+ 
+  
+  th {
+  
+    color: rgb(250, 251, 252);
+  }
+ 
+.header{
+   
+   /* background-image: linear-gradient(to right bottom,rgb(17, 26, 110),rgb(72, 114, 221));*/
+   background-color: #172c8b;
+}
+.table_body{
+    
+   
+    background-image: linear-gradient(to right, rgb(245, 246, 248), white, rgb(240, 243, 240));
+    border-bottom: 2px solid rgb(5, 4, 107);
+    /*background-image: linear-gradient(to right bottom,rgb(87, 122, 131),rgb(130, 137, 155));*/
+}
+.table_body:hover{
+   
+    background-image: linear-gradient(to right, rgb(224, 225, 226), rgb(239, 244, 248), rgb(236, 236, 238));
+    /*background-image: linear-gradient(to right bottom,rgb(152, 179, 219),rgb(191, 198, 216));*/
+}
+a{
+    text-decoration: none;
+}
+
+
+

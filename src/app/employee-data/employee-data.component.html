@@ -1,0 +1,60 @@
+
+<div class="employeetable">
+
+<div  class="row">
+    <div  class="col-sm-6 div1">
+        <table class="table">
+            <thead>
+                <th>Name</th>
+                <th>Skills</th>
+               
+            </thead>
+            <tbody>
+                <tr class="clickAction" *ngFor="let empVal of empdata" #val [attr.data-emp-id]="empVal.employeeId" (click)="logData(val)">
+                   
+                    <td >{{empVal.firstName}} {{empVal.middleName}} {{empVal.lastName}}</td>
+                    <td >{{empVal.skills}}</td>
+                
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <div  class="col-sm-6 div2" >
+
+        <table class="table tab2" *ngFor="let val of detailsOfEmployee">
+
+            <tbody>
+
+                <tr>
+                    <td>Name:</td>
+                    <td>{{val.employeeId.firstName}} {{val.employeeId.middleName}} {{val.employeeId.lastName}}</td>
+                </tr>
+                <tr>
+                    <td>Designation:</td>
+                    <td>{{val.employeeId.designation}}</td>
+                </tr>
+                <tr>
+                    <td>Skills:</td>
+                    <td>{{val.employeeId.skills}}</td>
+                </tr>
+                <tr>
+                    <td>MailId:</td>
+                    <td>{{val.employeeId.email}}</td>
+                </tr>
+                <tr>
+                    <td>ProjectName:</td>
+                    <td>{{val.projectId.name}}</td>
+                </tr>
+                <tr>
+                        <td>StartDate:</td>
+                        <td>{{val.projectId.startDate}}</td>
+                    </tr>
+
+            </tbody>
+
+        </table>
+    </div>
+</div>
+</div>

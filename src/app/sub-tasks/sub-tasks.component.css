@@ -1,0 +1,239 @@
+  /* Float four columns side by side */
+
+  .column {
+    margin-left:10%;
+      float: left;
+      width: 35%;
+      padding: 0 3%;
+      padding-bottom: 3%;
+  }
+
+  /* Remove extra left and right margins, due to padding */
+
+  .row {
+     width:100%;
+      margin: 0 -5px;
+      margin-top: 10%;
+      padding-right: 10%;
+  }
+
+  /* Clear floats after the columns */
+
+  .row:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+
+  progress-bar {
+      position: absolute;
+      padding-bottom: 2%;
+      bottom: 1%;
+      width: 90%;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.card:hover {
+    -moz-box-shadow: 10px 10px 7px rgba(0, 0, 0, .7);
+    -webkit-box-shadow: 10px 10px 7px rgba(0, 0, 0, .7);
+    box-shadow: 10px 10px 7px rgba(0, 0, 0, .7);
+    -webkit-transform: scale(1.10);
+    -moz-transform: scale(1.10);
+    -o-transform: scale(1.10);
+    transform: scale(1.10);
+    position: relative;
+    z-index: 5;
+}
+
+.card-title {
+    background-color: #315b96;
+    color:white;
+    padding: 2%;
+}
+
+.card-text {
+    display: block;
+}
+
+
+
+
+  /* Responsive columns */
+
+
+
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .column {
+        width: 90%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .row {
+        width:100%;
+         margin: 0 -5px;
+         margin-top: 10%;
+     }
+   
+
+/* Style the counter cards */
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 4%;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.card-title {
+    background-color: #315b96;
+    color:white;
+    padding: 2%;
+}
+
+.card-text {
+    display: block;
+}
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .column {
+        width: 70%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .row {
+        width:100%;
+        margin-left:10%;
+         margin-top: 10%;
+     }
+   
+
+/* Style the counter cards */
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 4%;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.card-title {
+    background-color: #315b96;
+    color:white;
+    padding: 2%;
+}
+
+.card-text {
+    display: block;
+}
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .column {
+        width: 40%;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .row {
+        width:100%;
+        margin-left: 2%;
+         margin-top: 10%;
+     }
+   
+/* Style the counter cards */
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 4%;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.card-title {
+    background-color: #315b96;
+    color:white;
+    padding: 2%;
+}
+
+.card-text {
+    display: block;
+}
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .column {
+        width: 35%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .row {
+        width:100%;
+        margin-right:10%;
+         margin-top: 10%;
+     }
+   
+
+/* Style the counter cards */
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 4%;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.card-title {
+    background-color: #315b96;
+    color:white;
+    padding: 2%;
+}
+
+.card-text {
+    display: block;
+}
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .column {
+        width: 40%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .row {
+        width:100%;
+         margin: 0 -5px;
+         margin-top: 10%;
+     }
+   
+
+/* Style the counter cards */
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 4%;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.card-title {
+    background-color: #315b96;
+    color:white;
+    padding: 2%;
+}
+
+.card-text {
+    display: block;
+}
+  }

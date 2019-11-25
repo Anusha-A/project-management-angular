@@ -1,0 +1,20 @@
+.employeetable{
+    margin:2%;
+}
+.clickAction{
+    background-color: rgb(177, 200, 226);
+}
+
+.clickAction:hover{
+    background-color: rgb(154, 181, 212);
+    cursor: pointer;
+}
+
+.tab2{
+    background-image: linear-gradient(to bottom ,rgb(151, 153, 151),rgb(189, 194, 189),rgb(210, 216, 210));
+}
+thead{
+    background-image: linear-gradient(to right,rgb(24, 103, 207),rgb(90, 153, 204));
+}
+
+

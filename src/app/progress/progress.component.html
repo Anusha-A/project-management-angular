@@ -1,0 +1,67 @@
+<div class="container">
+    
+    <div  class="row">
+        <div  class="col-sm-12">
+            <table >
+                <thead>
+            <tr class="header">
+                <th>
+                    Tasks
+                </th>
+                <th>Description</th>
+                <th>Start Date</th>
+                <th>End date</th>
+                <th>Progress</th>
+            </tr>
+            </thead>
+            <div class="alert alert-warning" *ngIf="errorMessage">
+                <p>{{errorMessage}}</p>
+            </div>
+            <tbody >
+            <tr *ngFor="let task of tasks; index as taskId" >
+
+                <td>
+                    <a [routerLink]="['/subtasks']" (click)="logId(val)">
+                        <p>{{task.taskTitle}}</p>
+                    </a>
+                </td>
+                <td>
+                    <a [routerLink]="['/subtasks']" (click)="logId(val)">
+                        <p>{{task.taskDescription}}</p>
+                    </a>
+                </td>
+                <td>
+                    <a [routerLink]="['/subtasks']" (click)="logId(val)">
+                        <p>{{task.startDate}}</p>
+                    </a>
+                </td>
+                <td>
+                    <a [routerLink]="['/subtasks']" (click)="logId(val)">
+                        <p>{{task.dueDate}}</p>
+                    </a>
+                </td>
+                <td #val [attr.data-task-id]="task.taskId">
+
+                   <!-- <a [routerLink]="['/subtasks',task.taskId,task.projectId.projectId]">-->
+                    <a [routerLink]="['/subtasks']" (click)="logId(val)">
+                        <circle-progress class="progressbar" [percent]="task.progress" titleFontSize=10 [radius]="40"
+                            [outerStrokeWidth]="7" [innerStrokeWidth]="5" [outerStrokeColor]="'#78C000'"
+                            [innerStrokeColor]="'#C7E596'" [animation]="true" [animationDuration]="300"
+                            [subtitleFormat]="formatSubtitle" subtitleColor="black" animationDuration="500"
+                            titleFontWeight="500" titleColor=#123a0c unitsColor=#123a0c subtitleColor=#0f0b60
+                            subtitleFontSize=10 subtitleFontWeight=600></circle-progress>
+
+                        <!-- <progress-bar [progress]="phase.phase_progress"
+                        [color-degraded]="{'0': '#FF0000',  '15':'#EAED19', '50': '#2A9DDF','90': '#5EDF2A'}">
+                    </progress-bar>-->
+                    </a>
+
+                </td>
+
+
+            </tr>
+        </tbody>
+        </table>
+        
+    </div>
+</div>

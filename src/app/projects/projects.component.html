@@ -1,0 +1,16 @@
+<div class="container ">
+    <div class="projectcontainer">
+    
+        <div class="card" *ngFor="let project of projects; index as projectId" style="min-height:200px;">
+                <div class="card-body">
+                <h5>{{ project.name |titlecase}}</h5>
+                <div class="footer" #proj [attr.data-project-id]="project.projectId" >
+                        <a [routerLink]="['/phases']" (click)="gotonext(proj)" class="btn btn-pink"><i class="fas fa-clone left"></i>View Project</a></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+

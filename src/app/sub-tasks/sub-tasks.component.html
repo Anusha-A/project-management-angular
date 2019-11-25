@@ -1,0 +1,28 @@
+<div class="container">
+   <div *ngIf="errorMessage">
+        <span >{{errorMessage}}</span>
+    </div>
+        <div class="row ">
+
+            <div class="column" *ngFor="let task of sbtask">
+                <div class="card h-100">
+                    <h5 class="card-title">{{task.subTaskTitle}}</h5>
+
+                    <div class="card-text flex-wrap">
+                        <p>AssignedTo: {{task[0]}} {{task[1]}}</p>
+                        <p>Start Date: {{task[5]}}</p>
+                        <p>End Date: {{task[2]}}</p>
+                    </div>
+                    <div>
+                        <p>Description: {{ task[4]}}</p>
+                    </div>
+                    <div class="progress">
+                        <progress-bar [progress]="task[6]"
+                            [color-degraded]="{'0': '#FF0000',  '15':'#EAED19', '50': '#2A9DDF','90': '#5EDF2A'}">
+                        </progress-bar>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+</div>
